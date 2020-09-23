@@ -1,0 +1,2 @@
+#include <bits/stdc++.h> 
+using namespace std; int main() { int n; while (cin >> n) {	vector<int> v(n*3); int r = 0; for (int i = 0; i < n*3; ++i) cin >> v[i]; sort(v.begin(), v.end()); for (int i = 0; i < n*3; i++) { r += i % 3 != 0 ? v[i] : 0; } cout << r << endl; } }
